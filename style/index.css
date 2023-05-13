@@ -1,0 +1,142 @@
+@import "components/card.css"; 
+@import "components/chip.css";
+
+main{
+    padding-bottom: 64px;
+}
+
+/****************************************************/
+
+#first-impression-wrapper{
+    margin-bottom: 32px;
+}
+
+#name{
+    font-size: 3.5em;
+}
+
+#name span:hover{
+    color: #fefe00;
+    transition: all 0.2s ease-in-out;
+    cursor: default;
+}
+
+#name span:not(:hover){
+    transition: all 0.4s ease-in-out;
+}
+
+#name:not(:hover){
+    color: #fefefd;
+    transition: all 0.4s ease-in-out;
+}
+
+#subtitle{
+    margin-bottom: 32px;
+}
+
+#subtitle span{
+    height: 100%;
+}
+
+#subtitle:hover{
+    transform: translateY(-4px);
+    transition: all 0.4s ease-in-out;
+    cursor: default;
+}
+
+#subtitle:not(:hover){
+    transition: all 0.4s ease-in-out;
+}
+
+#face-img-wrapper{
+    height: 360px;
+    width: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+#face-img{
+    transition: all 1s;
+}
+
+#face-img:hover{
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.25);
+    transition: all 0.2 ease-in-out;
+    cursor: pointer;
+}
+
+/****************************************************/
+
+#skills-wrapper{
+    margin-bottom: 32px;
+}
+
+.skill{
+    margin: 4px;
+}
+
+.skill ul{
+    list-style: none;
+}
+
+/****************************************************/
+
+#contact-wrapper{
+    margin-bottom: 32px;
+}
+
+#contact > h3{
+    margin: 8px;
+    margin-inline: 64px;
+    border-bottom: solid #fefe00;
+}
+
+#contact li{
+    font-size: 1.25em;
+    list-style: none;
+}
+
+#contact li a{
+    color: #fefefd;
+}
+
+/****************************************************/
+
+#about-me > h3{
+    margin: 8px;
+    margin-inline: 64px;
+    border-bottom: solid #fefe00;
+}
+
+#about-me-text{
+    padding-inline: 12%;
+}
+
+#about-me-text > h4{
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+#about-me-text > h4 > span{
+    border-bottom: solid #fefe00;
+}
+
+#language-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.language{
+    margin: 4px;
+    list-style: none;
+}
+
+.language-name{
+    font-size: 1em;    
+}
+
+.language-level{
+    font-size: 0.75em;
+}

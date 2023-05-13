@@ -1,0 +1,11 @@
+{
+    "name": "javier-macia.github.io",
+    "homepage": "https://javier-macia.github.io/",
+    "author": "Javier Macia",
+    "version": "1.0.0",
+    "description": "",
+    "dependencies": {
+      "bootstrap": "^5.0.1"
+    }
+}
+  

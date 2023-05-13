@@ -1,0 +1,26 @@
+.chip-wrapper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.chip{
+    font-size: 1.25em;    
+    width: fit-content;
+    height: fit-content;
+    padding-inline: 8px;
+    padding-block: 4px;
+    background-color: #fefe00;
+    border: 1px solid #fdfe00;
+    color: #15151b;
+    border-radius: 32px;
+}
+
+.chip:hover{
+    background-color: #ffff87;
+    cursor: default;
+}

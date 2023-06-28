@@ -16,7 +16,7 @@ main{
 }
 
 #name span:hover{
-    color: #fefe00;
+    color: var(--primary-color);
     transition: all 0.2s ease-in-out;
     cursor: default;
 }
@@ -26,7 +26,7 @@ main{
 }
 
 #name:not(:hover){
-    color: #fefefd;
+    color: var(--text-color);
     transition: all 0.4s ease-in-out;
 }
 
@@ -88,7 +88,7 @@ main{
 #contact > h3{
     margin: 8px;
     margin-inline: 64px;
-    border-bottom: solid #fefe00;
+    border-bottom: solid var(--accent-color);
 }
 
 #contact li{
@@ -97,7 +97,7 @@ main{
 }
 
 #contact li a{
-    color: #fefefd;
+    color: var(--text-color);
 }
 
 /****************************************************/
@@ -105,7 +105,7 @@ main{
 #about-me > h3{
     margin: 8px;
     margin-inline: 64px;
-    border-bottom: solid #fefe00;
+    border-bottom: solid var(--accent-color);
 }
 
 #about-me-text{
@@ -118,7 +118,7 @@ main{
 }
 
 #about-me-text > h4 > span{
-    border-bottom: solid #fefe00;
+    border-bottom: solid var(--accent-color);
 }
 
 #language-list{

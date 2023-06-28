@@ -1,4 +1,18 @@
 @import "components/button.css";
+@import "components/navigation.css";
+
+:root{
+    --background-color: #15151b;
+    --background-color-secondary: #fefefd;
+    --text-color: #fefefd;
+    --text-color-secondary: #15151b;
+    --primary-color: #fefe00;
+    --primary-color-variation: #ffff87;
+    --secondary-color: #29282d;
+    --tertiary-color: #1E1E1E;
+    --accent-color: #4f98c9;
+    --accent-color-variation: #92c0de;
+}
 
 *{
     margin:0;
@@ -8,8 +22,8 @@
 
 html{
     font-family: 'Roboto', sans-serif;
-    background-color: #15151b;
-    color: #fefefd;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 body{

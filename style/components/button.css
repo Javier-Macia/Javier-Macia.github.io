@@ -1,11 +1,9 @@
 .btn-primary {
-    color: #15151b;
-    background-color: #fefe00; /* COLOR DE BOTÓN PRINCIPAL*/
-    border-color: #fdfe00; /* COLOR DE ACENTO */
+    color: var(--text-color-secondary);
+    background-color: var(--primary-color); /* COLOR DE BOTÓN PRINCIPAL*/
 }
 
 .btn-secondary {
-    color: #fefefd;
-    background-color: #29282d; /* COLOR DE BOTÓN SECUNDARIO*/
-    border-color: #1E1E1E;
+    color: var(--text-color);
+    background-color: var(--secondary-color); /* COLOR DE BOTÓN SECUNDARIO*/
 }

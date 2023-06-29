@@ -48,6 +48,15 @@ main{
     transition: all 0.4s ease-in-out;
 }
 
+/****************************************************/
+#face-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0 0 148px;
+}
+
 #face-img-wrapper{
     height: 360px;
     width: 360px;
@@ -56,6 +65,8 @@ main{
 }
 
 #face-img{
+    position: relative;
+    z-index: 1;
     transition: all 1s;
 }
 
@@ -65,24 +76,20 @@ main{
     cursor: pointer;
 }
 
-/****************************************************/
-
-#skills-wrapper{
-    margin-bottom: 32px;
-}
-
-.skill{
-    margin: 4px;
-}
-
-.skill ul{
-    list-style: none;
-}
-
-/****************************************************/
-
 #contact-wrapper{
-    margin-bottom: 32px;
+    transition: none;
+    position: relative;
+    left: -162px;
+    padding-left: 122px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+#contact{
 }
 
 #contact > h3{
@@ -100,7 +107,55 @@ main{
     color: var(--text-color);
 }
 
+
+@media screen and (max-width: 1024px) {
+    #face-wrapper{
+        padding: 0 0 0 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;        
+    }
+    
+    #contact-wrapper{
+        width: 324px;
+    }
+
+    #first-impression-wrapper{
+        margin-bottom: 0;
+    }
+
+    #contact-wrapper{
+        position: relative;
+        top: -162px;
+        left: 0;
+        padding-inline: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+        padding-bottom: 12px;
+        margin-bottom: -152px;
+    }
+
+    #contact{
+        position: relative;
+        margin-top: 81px;
+    }
+}
+
 /****************************************************/
+
+#skills-wrapper{
+    margin-bottom: 32px;
+}
+
+.skill{
+    margin: 4px;
+}
+
+.skill ul{
+    list-style: none;
+}
+
 
 #about-me > h3{
     margin: 8px;

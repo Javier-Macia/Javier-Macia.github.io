@@ -79,7 +79,7 @@ nav ul li.active a:hover{
 }
 
 #nav-toggle:checked ~ .nav-toggle-label hr:nth-child(3){
-    transform: rotate(-45deg) translateX(12px) ;
+    transform: rotate(-45deg) translateX(12px) translateY(-1px) ;
 }
 
 /*Responsive*/

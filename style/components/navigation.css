@@ -1,11 +1,11 @@
 nav{
+    height: 64px;
     width: 100%;
-    min-height: 64px;
-    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;    
     padding: 8px 32px;
+    transition: all 0.3s ease;
 }
 
 nav ul{
@@ -20,7 +20,6 @@ nav ul{
 nav ul li{
     list-style: none;
 }
-
 
 nav ul li a{
     text-decoration: none;
@@ -46,3 +45,84 @@ nav ul li.active a{
 nav ul li.active a:hover{
     color: var(--accent-color);
 }
+
+.nav-toggle-label{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-toggle-label, #nav-toggle{
+    display: none;
+}
+
+.nav-toggle-label hr{
+    width: 32px;
+    margin-block: 8px;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.nav-toggle-label div{
+    transition: all 0.3s ease;
+}
+
+#nav-toggle:checked ~ .nav-toggle-label div{
+    transform: translateX(-8px);
+}
+
+#nav-toggle:checked ~ .nav-toggle-label hr:nth-child(1){
+    transform: rotate(45deg) translateX(12px) ;
+}
+
+#nav-toggle:checked ~ .nav-toggle-label hr:nth-child(2){
+    opacity: 0;
+}
+
+#nav-toggle:checked ~ .nav-toggle-label hr:nth-child(3){
+    transform: rotate(-45deg) translateX(12px) ;
+}
+
+/*Responsive*/
+@media screen and (max-width: 768px){
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 16px;
+    }
+
+    nav ul{
+        display: none;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        font-size: 2.5em;
+        top: 64px;
+        padding-bottom: 64px;
+        position: absolute;
+    }
+
+    #nav-toggle:checked ~ nav ul{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    #nav-toggle:checked ~ nav{
+        height: 100vh;
+    }
+
+    nav ul li a{
+        font-size: 1.1em;
+    }
+
+    .nav-toggle-label{
+        display: block;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+    }
+}
+

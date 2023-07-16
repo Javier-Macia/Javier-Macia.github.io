@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+    <!--Components-->
+    <script src="js/components/header.js" type="text/javascript" defer></script>
 
     <!-- Own style -->
     <link rel="stylesheet" href="style/general.css">
@@ -19,24 +21,7 @@
 
 </head>
 <body>
-    <header>
-        <input type="checkbox" id="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label">
-            <div>
-                <hr/>
-                <hr/>
-                <hr/>
-            </div>
-        </label>
-        <nav>
-            <ul>
-                <li class="nav-item active"> <a class="nav-link" href=".">Home</a></li>
-                <li class="nav-item"> <a class="nav-link" href="about/">About</a></li>
-                <li class="nav-item"> <a class="nav-link" href="projects/">My projects</a></li>
-                <li class="nav-item"> <a class="nav-link" href="education/">Education</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header-component></header-component>
     <main>
         <section class="container">
             <div class="row" id="first-impression-wrapper">
@@ -48,7 +33,7 @@
                         <div id="contact-wrapper" class="card">
                             <div id="contact">
                                 <ul  id="contact">
-                                    <h3 >Contact me</h3>
+                                    <h3>Contact me</h3>
                                     <li>
                                         <a href="mailto:javiermaciasempere@gmail.com" target="_blank">
                                             <i class="bi bi-mailbox"></i>  

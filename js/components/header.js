@@ -6,7 +6,6 @@ class Header extends HTMLElement {
     }
 
     connectedCallback() {
-        console.log(this.active_page);
         this.innerHTML = `
         <header>
             <input type="checkbox" id="nav-toggle">

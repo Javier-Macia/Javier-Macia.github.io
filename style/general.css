@@ -46,6 +46,44 @@ header{
     min-height: 64px;
 }
 
+main{
+    min-height: 100vh;
+}
+
+footer{
+    background-color: var(--secondary-color);
+    padding: 32px;
+    padding-bottom: 280px;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+footer ul li{
+    margin: 8px 0;
+    font-size: 4rem;
+    transition: all 0.2s ease-in-out;
+}
+
+footer ul li:hover{
+    transform: scale(1.2);
+}
+
+footer ul li a{
+    color: var(--text-color);
+}
+
+footer ul li:hover a{
+    color: var(--accent-color-variation);
+}
+
+
+
 body{
     margin-top: 64px;
 }

@@ -177,8 +177,12 @@
     margin-bottom: 32px;
 }
 
-#details-wrapper{
-    padding: 32px;
+.experience-section{
+    margin: 32px;
+}
+
+.experience-section > h2{
+    padding-inline-start: 16px;
 }
 
 #details-wrapper small{
@@ -187,5 +191,24 @@
 }
 
 .pl-32{
-    padding-left: 32px;
+    padding-inline-start: 32px;
 }
+
+.center-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 991px){
+    .experience-section{
+        margin: 0;
+    }
+
+    .experience-section img{
+        width: 224px;
+    }
+    
+}
+    

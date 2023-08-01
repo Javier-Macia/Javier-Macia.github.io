@@ -43,13 +43,6 @@ main{
     padding: 0 0 0 148px;
 }
 
-#face-img-wrapper{
-    height: 360px;
-    width: 360px;
-    display: flex;
-    justify-content: center;
-}
-
 #face-img{
     position: relative;
     z-index: 1;
@@ -73,9 +66,6 @@ main{
     z-index: 0;
     border-top-right-radius: 32px;
     border-bottom-right-radius: 32px;
-}
-
-#contact{
 }
 
 #contact > h3{
@@ -103,7 +93,7 @@ main{
     }
     
     #contact-wrapper{
-        width: 324px;
+        width: 254px;
     }
 
     #first-impression-wrapper{
@@ -112,14 +102,14 @@ main{
 
     #contact-wrapper{
         position: relative;
-        top: -162px;
+        top: -138px;
         left: 0;
         padding-inline: 0;
         border-top-right-radius: 0;
         border-bottom-right-radius: 16px;
         border-bottom-left-radius: 16px;
         padding-bottom: 12px;
-        margin-bottom: -152px;
+        margin-bottom: -138px;
     }
 
     #contact{

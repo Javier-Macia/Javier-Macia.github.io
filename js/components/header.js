@@ -27,8 +27,8 @@ class Header extends HTMLElement {
                     <li class="nav-item ${this.active_page === 'projects' ? 'active' : ''}">
                         <a href=" ${this.active_page === '' ? '.' : '..'}/projects/">My projects</a>
                     </li>
-                    <li class="nav-item ${this.active_page === 'education' ? 'active' : ''}">
-                        <a href=" ${this.active_page === '' ? '.' : '..'}/education/">Education</a>
+                    <li class="nav-item ${this.active_page === 'experience' ? 'active' : ''}">
+                        <a href=" ${this.active_page === '' ? '.' : '..'}/experience/">Experience</a>
                     </li>
                 </ul>
             </nav>

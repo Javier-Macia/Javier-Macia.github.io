@@ -24,7 +24,7 @@ permalink: /blog/
           <div class="pl-item-desc">
             <div class="post-details">
               <date datetime="{{ post.date | date_to_xml }}">
-                {{ post.date | localize: "%-d %b %Y" }}
+                {% include date_es.html date=post.date %}
               </date>
               {% assign autor = site.authors | where: 'short_name', post.autor | first %}
               {% if autor %}

@@ -14,7 +14,7 @@ layout: default
   </div>
   <div class="post-meta">
     <span class="post-date">
-      {{ page.date | localize: "%-d de %B de %Y" }}
+      {{ page.date | localize: "%-d de %B de %-Y" }}
     </span>
     
     {% assign autor = site.authors | where: 'short_name', page.autor | first %}

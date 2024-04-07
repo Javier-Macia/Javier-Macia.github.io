@@ -1,0 +1,87 @@
+#index-banner{
+    gap: 4px;
+}
+
+#home-face-img{
+    max-height: 262px;
+    height: 85%;
+    width: auto;
+    border-radius: 50%;
+}
+
+.content.index-content{
+    gap: 32px;
+}
+
+.section-title{
+    display: flex;
+    align-items: center;
+    font-size: 1.75em;
+    margin-block: 32px;
+}
+
+.section-title i{
+    font-size: 3rem;
+    margin-right: 8px;
+    color: $accent-color;
+}
+
+.section-h2-title{
+    font-size: 1.25em;
+    margin-block: 16px;
+}
+
+.section-h3-title{
+    font-size: 1.1em;
+    margin-block: 16px;
+}
+
+.section-aboutme .section-text{
+    line-height: 1.6;
+    margin-block: 16px;
+}
+
+.knowledge-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+}
+
+.knowledge-item{
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.knowledge-item:hover{
+    background-color: $accent-color;
+}
+
+.knowledge-title i{
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+.knowledge-title{
+    display: flex;
+    align-items: center;
+}
+
+.work-experience-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.work-experience-details{
+    padding: 16px;
+    margin-block: 16px;
+    border: 1px solid $light-grey-border;
+}

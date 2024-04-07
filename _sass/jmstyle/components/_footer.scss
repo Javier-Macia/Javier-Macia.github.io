@@ -1,0 +1,28 @@
+footer {
+    min-height: 40vh;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: $tertiary;
+    color: $white;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+footer ul li a {
+    color: $white;
+    text-decoration: none;
+    font-size: 4rem;
+}
+
+footer ul li a:hover {
+    color: $primary;
+}

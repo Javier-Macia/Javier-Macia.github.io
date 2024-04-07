@@ -1,0 +1,64 @@
+.post-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.post-meta{
+    padding-block: 4px;
+    padding-left: 10%; 
+    font-size: 0.875rem;
+    line-height: 1.6;
+    word-wrap: break-word;
+    background-color: $tertiary;
+    display: flex;
+    align-items: center;
+}
+
+.post-meta *{
+    color: $white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.post-meta a{
+    text-decoration: underline;
+}
+
+.post-meta a:hover{
+    color: $accent-color;
+}
+
+.post-content{
+    h1,h2,h3,h4,h5{
+        margin-top: 1rem;
+        font-weight: 700;
+    }
+    h2,h3,h4,h5{
+        color: $accent-color;
+    }
+    h1{
+        font-size: 2.25rem;
+        color: $primary;
+    }
+
+    h2{
+        font-size: 1.75rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    h4{
+        font-size: 1.25rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: $ms-width){
+    .post-meta{
+        padding-left: 8%;
+    }
+}

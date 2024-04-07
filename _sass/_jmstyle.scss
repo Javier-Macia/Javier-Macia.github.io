@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import "./jmstyle/variables.scss";
+@import "./jmstyle/base.scss";
+
+// Components
+@import "./jmstyle/components/header.scss";
+@import "./jmstyle/components/footer.scss";
+@import "./jmstyle/components/aside.scss";
+@import "./jmstyle/components/banner.scss";
+@import "./jmstyle/components/scrolltop.scss";
+@import "./jmstyle/components/syntax.scss";
+
+// Specific styles
+@import "./jmstyle/index.scss";
+@import "./jmstyle/post.scss";
+@import "./jmstyle/blog.scss";

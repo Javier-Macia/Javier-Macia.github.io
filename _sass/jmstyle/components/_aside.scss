@@ -1,0 +1,81 @@
+#aside-toggle{
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#aside-nav{
+    display: block;
+    height: 100vh;
+    width: $aside-width;
+    color: $primary;
+    background-color: $white;
+    padding: 32px 16px 32px 24px;
+    position: sticky;
+    top: $header-height;
+    left: 0;
+    overflow: scroll;
+    padding-bottom: 14vh; 
+}
+
+#aside-nav h2{
+    padding-bottom: 8px;
+}
+
+#aside-nav h2::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #0000004d;
+    margin-top: 8px;
+}
+
+#aside-nav ul{
+    padding-left: 16px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#aside-nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1em;
+    width: 100%;
+    padding: 4px;
+}
+
+#aside-nav ul li a:hover{
+    color: $primary;
+    text-decoration: underline;
+}
+
+.year-button{
+    width:100%;
+    background-color: $tertiary;
+    color: $white;
+    padding: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: $ms-width){
+    #aside-toggle{
+        display: flex;
+        cursor: pointer;
+    }
+
+    #aside-nav{
+        font-size: 1.25em;
+        display: none;
+        background: #f1f1f1d5;
+        backdrop-filter: blur(12px);
+        position: fixed;
+        z-index: 100;
+        border-right: 1px solid #dddddd4f;
+        width: 100%;
+    }
+}

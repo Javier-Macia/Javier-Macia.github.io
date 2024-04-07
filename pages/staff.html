@@ -1,0 +1,17 @@
+---
+title: Staff
+permalink: /staff
+---
+<h1>Staff</h1>
+
+<div class="authors-list">
+  <ul>
+    {% for author in site.authors %}
+      <li>
+        <span><a href="{{ author.url }}">{{ author.name }}</a></span>
+        <span>{{ author.position }}</span>
+        <p>{{ author.content | markdownify }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

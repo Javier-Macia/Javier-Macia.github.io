@@ -1,0 +1,91 @@
+header{
+    min-height: $header-height;
+    width: 100%;
+    padding-block: 16px;
+    padding-inline: 24px;
+    display: flex;
+    justify-content: left;
+    gap: 16px;
+    align-items: center;
+    flex-direction: row;
+    background: $white;
+    color: $black;
+    border-bottom: 1px solid #dddddd4f;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0px 0px 8px 0px #00000033;
+}
+
+.logo-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: $black;
+    transition: all 0.2s ease-in-out;
+}
+
+.logo-wrapper:hover{
+    background: $header-button-color;
+    color: $white;
+}
+
+.logo-wrapper h1{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Console';
+    padding: 8px;
+    padding-left: 12px;
+}
+
+nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+
+.nav-items{
+    display: flex;
+    text-decoration: none;
+}
+
+.nav-item{
+    display: flex;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-item a{
+    height: 38px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: $black;
+}
+
+.nav-item:hover{
+    background: $header-button-color;
+    color: $white;
+}
+
+.nav-item:hover a{
+    color: $white;
+}
+
+.nav-item a span{
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-block: 8px;
+    padding-inline: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+/*
+@media screen and (max-width: $ss-width){
+    .nav-item a span{
+        font-size: 1rem;
+    }
+}
+*/

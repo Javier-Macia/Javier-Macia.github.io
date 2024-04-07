@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="post-header">
+  <div
+    {% if page.banner %}
+      class="banner bg" data-bg= "{{ page.banner }}"
+    {% else %}
+      class="banner"
+    {% endif %}
+    >
+    
+    <h1>{{ page.titulo }}</h1>
+  </div>
+  <div class="post-meta">
+    <span class="post-date">
+      {{ page.date | localize: "%-d de %B de %Y" }}
+    </span>
+    
+    {% assign autor = site.authors | where: 'short_name', page.autor | first %}
+    {% if autor %}
+    <span>
+      &nbsp; - &nbsp; 
+    </span>
+      <a href="{{ author.url }}">{{ autor.name }}</a>
+    {% endif %}
+  </div>
+</div>
+<div class="content post-content">
+  {{ content }}
+</div>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <link>
+    <meta charset="utf-8">
+    <title>
+      {% if page.title %}
+        {{ page.title }} -
+      {% endif %} Javier MS</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.png" type="image/x-icon">
+
+    <!-- Iconos -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    {% feed_meta %}
+    {% seo %}
+</head>
+  <body>
+    {{ page.custom_css }}
+    {% include header.html %}
+    <main>
+      {% include aside.html %}
+      <div class="container">
+        {{ content }}
+      </div>
+    </main>
+    <div id="scrolltop-btn" tabindex="0">
+      <i class='bx bxs-chevron-up' ></i>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
+
+<script src="{{ site.baseurl }}/assets/js/scrolltop.js"></script>
+<script src="{{ site.baseurl }}/assets/js/copy2clipboard.js"></script>
+<script src="{{ site.baseurl }}/assets/js/main.js"></script>

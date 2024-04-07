@@ -1,0 +1,54 @@
+.banner, .short-banner{
+    width: 100%;
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    gap: 2rem;
+    padding: 16px;
+}
+
+.banner,.short-banner *{
+    z-index: 2;
+}
+
+.banner{
+    height: $banner-height;
+    letter-spacing: 0.5rem;
+}
+.banner, .short-banner h1{
+    font-size: 2rem;
+}
+.banner, .short-banner h2{
+    font-size: 1.5rem;
+}
+
+.short-banner{
+    height: $banner-short-height;
+    letter-spacing: 0.25rem;
+}
+
+@media screen and (max-width: $ms-width){
+    .banner{
+        height: 268px;
+        gap: 1.25rem;
+        font-size: 1rem;
+    }
+    .banner, .short-banner h1 {
+        font-size: 2rem;
+    }
+    .banner, .short-banner  h2 {
+        font-size: 1rem;
+    }
+
+    .short-banner{
+        height: 200px;
+        font-size: 0.75rem;
+    }
+    
+}

@@ -1,0 +1,60 @@
+// Font
+$font-family: 'Roboto', sans-serif;
+$monospace: 'Inconsolata';
+$font-size: 16px;
+
+/*
+    COLORS
+*/
+$black: #050a0d;
+$white: #f1f1f1;
+$grey: #798a96;
+$background: #f7fafc;
+$primary: #4493c9;
+$secondary: #97c6e5;
+$tertiary: #273646;
+$accent-color: #6bb1e1;
+$header-button-color: #798a96;
+$light-grey-border: #ccc;
+$border: #868686;
+
+    // Syntax highlighting (base16)
+    $highlight-bg-color: #ffffff;
+    $code-whitespace-color: #bbbbbb ;
+    $code-keyword-color: #445588 ;
+    $code-green-color: #009926 ;
+    $code-light-blue-color: #009999 ;
+    $code-blue-color: #008080 ;
+    $code-dark-blue-color: #0086B3 ;
+    $code-darkest-blue-color: #445588 ;
+    $code-pure-blue-color: #000080 ;
+    $code-red-color: #d14 ;
+    $code-red-dark-color: #990000 ;
+
+    $code-string-symbol-color: #990073 ;
+    $code-name-color: #800080 ;
+    $code-attribute-color: #008080 ;
+    $code-err-color: #a61717 ;
+    $code-traceback-color: #aa0000 ;
+    $code-grey-color: #e3d2d2 ;
+    $code-grey-lightest-color: #aaaaaa ;
+    $code-grey-light-color: #999988 ;
+    $code-grey-dark-color: #999999 ;
+    $code-grey-darkest-color: #888888 ;
+    $code-grey-darkest-2-color: #555555 ;
+    $code-black-color: #000000 ;
+
+// Widths
+$ws-width: 1440px;
+$ms-width: 1024px;
+$ss-width: 728px;
+$max-img-width: 578px;
+
+// Heights
+$header-height: 98px;
+$aside-width: 368px;
+$page-min-height: 180vh;
+$banner-height: 468px;
+$banner-short-height: 268px;
+
+

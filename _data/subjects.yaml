@@ -1,0 +1,147 @@
+- asignatura: EST
+  curso: 1
+  cuatrimestre: 1
+  nombre: Estadística
+- asignatura: FC
+  curso: 1
+  cuatrimestre: 1
+  nombre: Fundamentos de Computadores
+- asignatura: FP
+  curso: 1
+  cuatrimestre: 1
+  nombre: Fundamentos de Programación
+- asignatura: FFI1
+  curso: 1
+  cuatrimestre: 1
+  nombre: Fundamentos Físicos de la Informática 1
+- asignatura: ALG
+  curso: 1
+  cuatrimestre: 1
+  nombre: Álgebra
+ 
+- asignatura: AM
+  curso: 1
+  cuatrimestre: 2
+  nombre: Análisis matemático
+- asignatura: FGE
+  curso: 1
+  cuatrimestre: 2
+  nombre: Fundamentos de Gestión Empresarial
+- asignatura: FFI2
+  curso: 1
+  cuatrimestre: 2
+  nombre: Fundamentos Físicos de la Informática 2
+- asignatura: IO
+  curso: 1
+  cuatrimestre: 2
+  nombre: Investigación Operativa
+- asignatura: MPA
+  curso: 1
+  cuatrimestre: 2
+  nombre: Metodología de la Programación y Algoritmia
+
+- asignatura: IS
+  curso: 2
+  cuatrimestre: 1
+  nombre: Ingeniería del Software
+- asignatura: INTU
+  curso: 2
+  cuatrimestre: 1
+  nombre: Interfaces de Usuario
+- asignatura: POO
+  curso: 2
+  cuatrimestre: 1
+  nombre: Programación Orientada a Objetos
+- asignatura: RC
+  curso: 2
+  cuatrimestre: 1
+  nombre: Redes de Computadores
+- asignatura: SO
+  curso: 2
+  cuatrimestre: 1
+  nombre: Sistemas Operativos
+
+- asignatura: ED
+  curso: 2
+  cuatrimestre: 2
+  nombre: Estructuras de Datos
+- asignatura: FBD
+  curso: 2
+  cuatrimestre: 2
+  nombre: Fundamentos de Bases de Datos
+- asignatura: GPIS
+  curso: 2
+  cuatrimestre: 2
+  nombre: Gestión de Proyectos de Ingeniería del Software
+- asignatura: SSI
+  curso: 2
+  cuatrimestre: 2
+  nombre: Seguridad en Sistemas Informáticos
+- asignatura: TC
+  curso: 2
+  cuatrimestre: 2
+  nombre: Tecnología de los Computadores
+
+- asignatura: ATW
+  curso: 3
+  cuatrimestre: 1
+  nombre: Administración en Tecnologías Web
+- asignatura: CP
+  curso: 3
+  cuatrimestre: 1
+  nombre: Computación Paralela
+- asignatura: DGBD
+  curso: 3
+  cuatrimestre: 1
+  nombre: Diseño y Gestión de Bases de Datos
+- asignatura: MD
+  curso: 3
+  cuatrimestre: 1
+  nombre: Minería de Datos
+- asignatura: TW
+  curso: 3
+  cuatrimestre: 1
+  nombre: Tecnologías Web
+
+- asignatura: CE
+  curso: 3
+  cuatrimestre: 2
+  nombre: Comercio Electrónico
+- asignatura: DAI
+  curso: 3
+  cuatrimestre: 2
+  nombre: Desarrollo de Aplicaciones en Internet
+- asignatura: DADM
+  curso: 3
+  cuatrimestre: 2
+  nombre: Desarrollo de Aplicaciones para Dispositivos Móviles
+- asignatura: DAM
+  curso: 3
+  cuatrimestre: 2
+  nombre: Diseño de Aplicaciones Multimedia
+- asignatura: ITI
+  curso: 3
+  cuatrimestre: 2
+  nombre: Implantación de las Tecnologías de la Información
+
+
+- asignatura: ARC
+  curso: 4
+  cuatrimestre: 1
+  nombre: Administración de Redes de Computadores
+- asignatura: DSI
+  curso: 4
+  cuatrimestre: 1
+  nombre: Diseño de Sistemas Interactivos
+- asignatura: DSO
+  curso: 4
+  cuatrimestre: 1
+  nombre: Diseño de Sistemas Operativos
+- asignatura: INGU
+  curso: 4
+  cuatrimestre: 1
+  nombre: Ingeniería de la Usabilidad
+- asignatura: SIC
+  curso: 4
+  cuatrimestre: 1
+  nombre: Sistemas Informáticos Contables

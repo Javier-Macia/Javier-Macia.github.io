@@ -1,0 +1,45 @@
+---
+title: Blog
+permalink: /blog
+---
+<div class="short-banner">
+  <div class="presentation">
+      <h1 class="title">Últimos posts</h1>
+      <h2 class="subtitle">Descubre las últimas publicaciones</h2>
+  </div>
+</div>
+<section class="content blog-content">
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li class="pl-item">
+        <article class="pl-item-content" onclick="location.href='{{ post.url }}'">
+          <a class="post-thumbnail bg" href="{{ post.url }}" alt="{{ post.titulo }}"
+            {% if post.banner %}
+              data-bg= "{{ post.banner }}" 
+            {% endif %}
+          >
+            <h2 class="post-title">{{ post.titulo }}</h2>
+          </a>
+
+          <div class="pl-item-desc">
+            <div class="post-details">
+              <date datetime="{{ post.date | date_to_xml }}">
+                {{ post.date | localize: "%-d %b %Y" }}
+              </date>
+              {% assign autor = site.authors | where: 'short_name', post.autor | first %}
+              {% if autor %}
+              <span class="post-author">
+                &nbsp;-&nbsp;{{ autor.name }}
+              </span>
+              {% endif %}
+            </div>
+            
+            <div class="post-excerpt">
+              {{ post.excerpt }}
+            </div>  
+          </div>
+        </article>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

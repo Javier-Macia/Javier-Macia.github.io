@@ -1,9 +1,0 @@
-.btn-primary {
-    color: var(--text-color-secondary);
-    background-color: var(--primary-color); /* COLOR DE BOTÓN PRINCIPAL*/
-}
-
-.btn-secondary {
-    color: var(--text-color);
-    background-color: var(--secondary-color); /* COLOR DE BOTÓN SECUNDARIO*/
-}

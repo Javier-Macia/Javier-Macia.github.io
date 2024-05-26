@@ -5,17 +5,15 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1">
-    <title>
+    <meta name="author" content="Javier Maciá Sempere">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    
+      <title>
       {% if page.title %}
         {{ page.title }} -
       {% endif %} Javier MS</title>
-    <description>
-      {% if page.description %}
-        {{ page.description }}
-      {% else %}
-        {{ site.description }}
-      {% endif %}
-    </description>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
     <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.png" type="image/x-icon">
 

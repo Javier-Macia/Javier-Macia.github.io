@@ -41,6 +41,42 @@
     margin-block: 16px;
 }
 
+.contact-list{
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    .contact-item{
+        width: 100%;
+        padding: 16px 0px 0px 0px;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: $white;
+            text-align: center;
+            padding: 16px;
+            font-size: 1.2em;
+            border: 1px solid $light-grey-border;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+            gap: 4px;
+            text-decoration: none;
+            color: $black;
+            i{
+                font-size: 1.8rem;
+            
+            }
+        }
+        a:hover{
+            color: $white;
+            background-color: $tertiary;
+        }
+    }
+}
+
 .knowledge-list{
     display: flex;
     flex-wrap: wrap;

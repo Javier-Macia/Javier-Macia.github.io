@@ -9,6 +9,13 @@
       {% if page.title %}
         {{ page.title }} -
       {% endif %} Javier MS</title>
+    <description>
+      {% if page.description %}
+        {{ page.description }}
+      {% else %}
+        {{ site.description }}
+      {% endif %}
+    </description>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
     <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.png" type="image/x-icon">
 

@@ -21,7 +21,8 @@
 title: Javier Maciá
 email: javiermaciasempere@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal portfolio. Javier Maciá Sempere.
+  Portfolio personal. Javier Maciá Sempere.
+  Explora una amplia gama de tutoriales, curiosidades y recursos sobre ingeniería informática en mi wiki.  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://javier-macia.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  javier-macia

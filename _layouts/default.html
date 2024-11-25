@@ -1,19 +1,29 @@
 <!doctype html>
 <html>
-  <link>
+  <head>
     <meta charset="utf-8">
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta name="author" content="Javier Maciá Sempere">
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    {% if page.description %}
+      <meta name="description" content="{{ page.description }}">
+    {% else %}
+      <meta name="description" content="{{ site.description }}">
+    {% endif %}
+
+    {% if page.keywords %}
+      <meta name="keywords" content="{{ page.keywords | join: ', ' | escape }}">
+    {% endif %}
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     
-      <title>
+    <title>
       {% if page.title %}
         {{ page.title }} -
-      {% endif %} Javier MS</title>
+      {% endif %} 
+      Javier MS
+    </title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
     <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.png" type="image/x-icon">
 

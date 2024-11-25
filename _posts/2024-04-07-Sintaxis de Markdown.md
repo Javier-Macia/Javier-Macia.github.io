@@ -3,6 +3,11 @@ layout: post
 titulo: Sintaxis de Markdown
 autor: javier
 banner: /assets/img/posts/2024-04-07/banner.png
+description: En este post, se profundiza sobre qué es Markdown y qué sintaxis tiene.
+keywords:
+  - Markdown
+  - Sintaxis de Markdown
+  - Lenguaje de marcado
 ---
 Markdown es un lenguaje de marcado de texto que permite agregar formatos simples a textos.
 Este formato es muy útil porque nos permite centrarnos en el contenido de la información pero sin olvidar el estilo de manera muy sencilla. 

@@ -3,10 +3,22 @@
 }
 
 #home-face-img{
-    max-height: 262px;
-    height: 85%;
-    width: auto;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
     border-radius: 50%;
+}
+
+#home-face-id-wrapper{
+    max-height: 262px;
+    max-width: 262px;
+    height: 100%;
+    width: 100%;
+    @media screen and (max-width: 1024px){
+        max-height: 108px;
+        max-width: 108px;
+    }
 }
 
 .content.index-content{

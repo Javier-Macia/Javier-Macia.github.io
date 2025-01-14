@@ -4,7 +4,9 @@ layout: default
 ---
 
 <div id="index-banner" class="banner bg" data-bg="{{ site.baseurl }}/assets/img/index_banner.png">
-    <img src="{{ site.baseurl }}/assets/img/jms.jpg" alt="Javier MS" id="home-face-img">
+    <div id="home-face-id-wrapper">
+        <img src="{{ site.baseurl }}/assets/img/jms.png" alt="" id="home-face-img">
+    </div>
     <div class="presentation">
         <h1 class="title">Javier Maciá</h1>
         <h2 class="subtitle">Full-stack developer</h2>        
@@ -17,10 +19,9 @@ layout: default
             <p class="section-text">¡Hola! 👋</p>
             <p class="section-text">
                 Soy desarrollador Full Stack. Durante mi vida académica, he podido conseguir experiencia en el desarrollo web, tanto en el desarrollo Back como en el Front. Además, he podido aprender y aplicar diferentes técnicas para crear software eficiente y estético. ⚒️⭐
-                
             </p>
             <p class="section-text">
-                Actualmente estoy desarrollando mi trabajo de fin de grado en relación a la Inteligencia Artificial (IA) y el Deep Learning y su aplicación práctica con Python. 🐍🧠🖥️
+                Actualmente estoy desarrollando mi trabajo de fin de grado en relación a la Inteligencia Artificial (IA) y el Deep Learning y su aplicación práctica. 🧠🖥️
             </p>
             <p class="section-text">
                 Soy una persona curiosa y ambiciosa, y es por eso que además de mi interés por la web y mi desarrollo con la IA, también me interesa la creación de aplicaciones móviles.
@@ -30,14 +31,14 @@ layout: default
         <ul class="contact-list">
             <div>
                 <li class="contact-item">
-                    <a href="mailto:javierms.dev@gmail.com" class="contact-link"><i class='bx bx-mail-send'></i> Correo</a>
+                    <a href="mailto:javierms.dev@gmail.com" rel="noopener noreferrer" class="contact-link"><i class='bx bx-mail-send'></i> Correo</a>
                 </li>
                 <li class="contact-item">
-                    <a href="https://www.linkedin.com/in/javiermaciasempere/" target="_blank" class="contact-link"><i class='bx bxl-linkedin'></i> LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/javiermaciasempere/" rel="noopener noreferrer"  target="_blank" class="contact-link"><i class='bx bxl-linkedin'></i> LinkedIn</a>
                 </li>
             </div>
             <li class="contact-item">
-                <a href="/assets/pdf/Javier Maciá Sempere - CV.pdf" target="_blank" class="contact-link"><i class='bx bxs-file-pdf'></i> Currículum Vitae</a>
+                <a href="/assets/pdf/Javier Maciá Sempere - CV.pdf" rel="noopener noreferrer"  target="_blank" class="contact-link"><i class='bx bxs-file-pdf'></i> Currículum Vitae</a>
             </li>
         </ul>
     </section>
@@ -48,16 +49,62 @@ layout: default
             <article class="work-experience">
                 <h2 class="section-h2-title">Abr. 2024 - Actualidad</h2>
                 <div class="work-experience-details">
-                    <h3 class="section-h3-title">Programador informático en GIOS Brand Distribution S.L.</h3>
-                    <p class="section-text">Cambio de plataforma de Joomla! a Wordpress en GIOS Teamwear. Mantenimiento, creación de contenido, diseño, optimización y asesoramiento del sitio web. Desarrollo "full-stack".</p>
+                    <h3 class="section-h3-title">GIOS Brand Distribution S.L.</h3>
+                    <h4 class="section-h4-title">Programador informático</h4>
+                    <p class="section-text">
+                        <ul>
+                            <li>
+                                Lideré el desarrollo técnico, pues fui el único informático de la empresa. Así, resolví desafíos y retos de todo tipo por mi propia cuenta.
+                            </li>
+                            <li>
+                                Desarrollé una plataforma WordPress desde cero, implementando código propio escrito en HTML, CSS, JavaScript y PHP.
+                            </li>
+                            <li>
+                                Implementé prácticas de diseño para construir interfaces estéticas, eficientes, adaptables y accesibles.
+                            </li>
+                            <li>
+                                Generé el contenido relacionado con la venta de los productos ofertados en la web, donde mejoré y apliqué conocimientos de posicionamiento SEO.
+                            </li>
+                            <li>
+                                Me coordiné y comuniqué con los diferentes departamentos de la empresa, como ventas o administración.
+                            </li>
+                            <li>
+                                Optimicé y mejoré los diferentes módulos previamente existentes de la antigua página web, así como también agregué nuevos.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </article>
+
+            <article class="work-experience">
+                <h2 class="section-h2-title">Nov. 2024 - Actualidad</h2>
+                <div class="work-experience-details">
+                    <h3 class="section-h3-title">Aire Networks del Mediterráneo S.L.</h3>
+                    <h4 class="section-h4-title">Becario</h4>
+                    <p class="section-text">
+                        <ul>
+                            <li>
+                                Configuré y preparé Routers y ONTs y ayudé en la gestión de las VLANs e IPs.
+                            </li>
+                            <li>
+                                Apoyé a distribuidores, delegados y contratas en las diferentes solicitudes de fibra, así como también proporcioné la viabilidad FTTH de las mismas.
+                            </li>
+                        </ul>
+                    </p>
                 </div>
             </article>
 
             <article class="work-experience">
                 <h2 class="section-h2-title">May. 2021 - oct. 2022 y jun. 2023 - oct. 2023</h2>
                 <div class="work-experience-details">
-                    <h3 class="section-h3-title">Becario, creador de ejercicios bajo el ecosistema Drupal 7. </h3>
-                    <p class="section-text">Realicé la creación de los ejercicios bajo un ecosistema Drupal 7 como parte de unas prácticas en el Parque Científico de la Universidad Miguel Hernández de Elche.</p>
+                    <h3 class="section-h3-title">Parque Científico de la Universidad Miguel Hernández de Elche</h3>
+                    <h4 class="section-h4-title">Becario, creador de ejercicios bajo el ecosistema Drupal 7. </h4>
+                    <p class="section-text">
+                        <ul>
+                            <li>
+                                Realicé la creación de los ejercicios bajo un ecosistema Drupal 7 como parte de unas prácticas en el Parque Científico de la Universidad Miguel Hernández de Elche.</p>
+                            </li>
+                        </ul>
                 </div>
             </article>
 
@@ -70,7 +117,7 @@ layout: default
             <h2 class="section-h2-title">Lenguajes de programación</h2>
             <ul class="knowledge-list">
                 <li class="knowledge-item">
-                    <span class="knowledge-title"><i class='bx bxl-c-plus-plus'></i></i>C++</span>
+                    <span class="knowledge-title"><i class='bx bxl-c-plus-plus'></i>C++</span>
                 </li>
                 <li class="knowledge-item">
                     <span class="knowledge-title"><i class='bx bxl-html5'></i>HTML</span>
@@ -85,7 +132,7 @@ layout: default
                     <span class="knowledge-title"><i class='bx bxl-java'></i>Java</span>
                 </li>
                 <li class="knowledge-item">
-                    <span class="knowledge-title"><i class='bx bx-data' ></i></i>SQL</span>
+                    <span class="knowledge-title"><i class='bx bx-data' ></i>SQL</span>
                 </li>
             </ul>
         </article>
@@ -128,7 +175,7 @@ layout: default
                 <div data-iframe-width="140" data-iframe-height="260" data-share-badge-id="5fa61f5f-eccc-4ef8-8d86-88f597fa7c30" data-share-badge-host="https://www.credly.com"></div>
                 
                 <!-- Código para los embebidos CISCO -->
-                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                <script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
             </article>
 
             <article class="certificate">

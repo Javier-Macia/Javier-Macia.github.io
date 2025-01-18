@@ -44,6 +44,31 @@ blockquote{
     }
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    tr:nth-child(even) {
+        background-color: $light-grey;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: $primary;
+        color: $white;
+    } 
+    th:nth-child(1){
+        border-top-left-radius: 8px;
+    }
+    th:last-child{
+        border-top-right-radius: 8px;
+    }
+    
+    
+}
+
 @media screen and (max-width: $ms-width){
     main{
         flex-direction: column;

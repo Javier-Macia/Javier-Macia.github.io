@@ -12,46 +12,84 @@
     width: $aside-width;
     color: $primary;
     background-color: $white;
-    padding: 32px 16px 32px 24px;
+    padding: 32px 24px;
     position: sticky;
     top: $header-height;
     left: 0;
-    overflow: scroll;
-    padding-bottom: 14vh; 
+    overflow-y: auto;
+    padding-bottom: 14vh;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    border-right: 1px solid #f0f0f0;
 }
 
 #aside-nav h2{
-    padding-bottom: 8px;
+    padding-bottom: 12px;
+    font-weight: 600;
+    color: darken($primary, 10%);
+    letter-spacing: 0.5px;
 }
 
 #aside-nav h2::after{
     content: '';
     display: block;
     width: 100%;
-    height: 1px;
-    background-color: #0000004d;
-    margin-top: 8px;
+    height: 2px;
+    background: linear-gradient(90deg, $primary 0%, rgba(0,0,0,0.1) 100%);
+    margin-top: 10px;
+    border-radius: 2px;
 }
 
 #aside-nav ul{
-    padding-left: 16px;
+    padding-left: 8px;
     list-style: none;
     display: flex;
     flex-direction: column;
+    margin-top: 8px;
+}
+
+#aside-nav ul li {
+    margin-bottom: 6px;
+    border-left: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+#aside-nav ul li:hover {
+    border-left: 2px solid $primary;
+    padding-left: 6px;
 }
 
 #aside-nav ul li a{
     display: inline-block;
     text-decoration: none;
     color: inherit;
-    font-size: 1em;
+    font-size: 0.95em;
     width: 100%;
-    padding: 4px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
 }
 
 #aside-nav ul li a:hover{
     color: $primary;
-    text-decoration: underline;
+    background-color: rgba(0,0,0,0.03);
+    text-decoration: none;
+}
+
+.recent-posts-list {
+    margin-bottom: 20px;
+}
+
+.recent-post-item {
+    background-color: rgba(0,0,0,0.01);
+    margin-bottom: 8px !important;
+    border-radius: 6px;
+}
+
+.last-post-title {
+    display: block;
+    padding: 2px;
+    font-weight: 500;
+    position: relative;
 }
 
 .year-button{
@@ -71,11 +109,17 @@
     #aside-nav{
         font-size: 1.25em;
         display: none;
-        background: #f1f1f1d5;
+        background: rgba(241, 241, 241, 0.95);
         backdrop-filter: blur(12px);
         position: fixed;
         z-index: 100;
         border-right: 1px solid #dddddd4f;
         width: 100%;
+        padding: 24px 20px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    .recent-post-item {
+        background-color: rgba(255,255,255,0.5);
     }
 }

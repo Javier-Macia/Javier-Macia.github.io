@@ -1,18 +1,17 @@
 <aside id="aside-nav">
     <div class="category-wrapper">
-        <h2>Últimos posts</h2>
-        <ul>
+        <h2 class="aside-section-title">Últimos posts</h2>
+        <ul class="recent-posts-list">
         {% for post in site.posts array limit: 6 %}
-            <li><a href="{{post.url}}"><span class="last-post-title">{{post.titulo}}</span></a></li>
+            <li class="recent-post-item"><a href="{{post.url}}"><span class="last-post-title">{{post.titulo}}</span></a></li>
         {% endfor %}
-
         </ul>
 
         <!--
         {% for curso in (1..4) %}
         <h3 class="year-button"curso={{curso}}><i class='bx bx-chevron-right'></i>Curso {{ curso }}</h3>
             {% for cuatri in (1..2) %}
-                {% if curso == 4 and cuatri == 2 %}
+                {% if curso == 4 and cuatri == 2 %} 
                     {% continue %}
                 {% endif %}
             <h4></i>Cuatrimestre {{ cuatri }}</h4>

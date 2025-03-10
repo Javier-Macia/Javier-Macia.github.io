@@ -35,6 +35,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-date-localization
+  - jekyll-redirect-from
 
 collections:
   pages:

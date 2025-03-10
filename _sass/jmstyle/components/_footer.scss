@@ -13,7 +13,7 @@ footer {
         gap: 2rem;
         
         .footer-section {
-            flex: 1 1 300px;
+            flex: 1 1 1;
             margin-bottom: 1.5rem;
             
             h3 {
@@ -106,22 +106,42 @@ footer {
     footer .footer-content {
         flex-direction: column;
         text-align: center;
+        gap: 0.5rem;
         
-        .footer-section h3::after {
-            left: 50%;
-            transform: translateX(-50%);
+        .footer-section {
+            margin-bottom: 1rem;
+            h3 {
+                margin-bottom: 0.7rem;
+                &::after {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
         }
         
         .contact p {
             justify-content: center;
+            margin-bottom: 0.3rem;  
         }
     }
     
     footer .social-icons {
         justify-content: center;
+        margin-top: 0.5rem;
     }
     
-    footer .quick-links li a:hover {
-        padding-left: 0;
+    footer .quick-links {
+        li {
+            margin-bottom: 0.3rem;
+        }
+        
+        li a:hover {
+            padding-left: 0;
+        }
+    }
+    
+    footer .footer-bottom {
+        padding-top: 1.5rem;  
+        margin-top: 1.5rem;
     }
 }

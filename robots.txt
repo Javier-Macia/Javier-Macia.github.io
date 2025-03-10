@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Evitar indexación de páginas administrativas o duplicadas
+Disallow: /404.html
+Disallow: /assets/
+Disallow: /*.md$
+Allow: /posts/
+Allow: /blog/
+Allow: /_posts/
+
+# Permitir indexación a Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Permitir indexación a Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Sitemap
+Sitemap: https://javier-macia.github.io/sitemap.xml

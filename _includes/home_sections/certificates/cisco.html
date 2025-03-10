@@ -1,12 +1,12 @@
 <style>
-    .static-certificates {
+    .cisco-certificates {
         display: flex;
         flex-wrap: wrap;
         gap: 25px;
         margin-top: 20px;
         justify-content: center;
     }
-    .certificate-card {
+    .cisco-card {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -21,11 +21,11 @@
         overflow: hidden;
         border: 1px solid rgba(255,255,255,0.8);
     }
-    .certificate-card:hover {
+    .cisco-card:hover {
         transform: translateY(-5px);
         box-shadow: 0 15px 30px rgba(0,0,0,0.12);
     }
-    .certificate-card::before {
+    .cisco-card::before {
         content: '';
         position: absolute;
         top: -50%;
@@ -39,11 +39,11 @@
         transform: rotate(45deg);
         transition: all 0.7s ease-in-out;
     }
-    .certificate-card:hover::before {
+    .cisco-card:hover::before {
         top: 100%;
         left: 100%;
     }
-    .certificate-img {
+    .cisco-img {
         width: 150px;
         height: 150px;
         object-fit: contain;
@@ -51,13 +51,13 @@
         filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));
         transition: all 0.3s ease;
     }
-    .certificate-card:hover .certificate-img {
+    .cisco-card:hover .cisco-img {
         transform: scale(1.05);
     }
-    .certificate-info {
+    .cisco-info {
         width: 100%;
     }
-    .certificate-info h3 {
+    .cisco-info h3 {
         font-size: 15px;
         font-weight: 600;
         margin: 10px 0;
@@ -65,10 +65,10 @@
         line-height: 1.4;
         transition: color 0.3s ease;
     }
-    .certificate-card:hover .certificate-info h3 {
+    .cisco-card:hover .cisco-info h3 {
         color: #0056b3;
     }
-    .certificate-link {
+    .cisco-link {
         display: inline-block;
         margin-top: 15px;
         padding: 12px 12px;
@@ -85,41 +85,41 @@
         width: 80%; 
         text-align: center;
     }
-    .certificate-link:hover, .certificate-link:focus {
+    .cisco-link:hover, .cisco-link:focus {
         background: linear-gradient(135deg, #0d47a1, #1a73e8);
         box-shadow: 0 6px 12px rgba(26, 115, 232, 0.4);
         transform: translateY(-2px);
         outline: none; 
     }
     /* Efecto de pulsación para feedback táctil */
-    .certificate-link:active {
+    .cisco-link:active {
         transform: translateY(0);
         box-shadow: 0 2px 4px rgba(26, 115, 232, 0.3);
     }
     
     /* Media query para móviles - mostrar 2 certificados por fila */
     @media (max-width: 767px) {
-        .static-certificates {
+        .cisco-certificates {
             justify-content: space-between;
             gap: 15px;
         }
-        .certificate-card {
+        .cisco-card {
             width: calc(50% - 15px);
             padding: 15px 10px;
             margin-bottom: 15px;
         }
-        .certificate-img {
+        .cisco-img {
             width: 120px;
             height: 120px;
         }
-        .certificate-info h3 {
+        .cisco-info h3 {
             font-size: 14px;
             min-height: 60px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        .certificate-link {
+        .cisco-link {
             padding: 10px 5px;
             font-size: 13px;
             width: 90%;
@@ -129,15 +129,15 @@
     
     /* Media query para pantallas muy pequeñas */
     @media (max-width: 375px) {
-        .certificate-card {
+        .cisco-card {
             width: calc(50% - 10px);
             padding: 10px 8px;
         }
-        .certificate-img {
+        .cisco-img {
             width: 100px;
             height: 100px;
         }
-        .certificate-info h3 {
+        .cisco-info h3 {
             font-size: 12px;
             min-height: 70px;
         }
@@ -158,20 +158,20 @@
     <h2 class="section-h2-title">Certificados CISCO</h2>
     
     <!-- Versión estática de los certificados (siempre visible) -->
-    <div class="static-certificates">
-        <div class="certificate-card">
-            <img src="{{ site.baseurl }}/assets/img/certificates/cisco-badge-1.png" alt="Introduction to Cybersecurity" class="certificate-img">
-            <div class="certificate-info">
+    <div class="cisco-certificates">
+        <div class="cisco-card">
+            <img src="{{ site.baseurl }}/assets/img/certificates/cisco-badge-1.png" alt="Introduction to Cybersecurity" class="cisco-img">
+            <div class="cisco-info">
                 <h3>Introduction to Cybersecurity</h3>
-                <a href="https://www.credly.com/badges/780a1381-3cfe-420f-893e-c287e615b85a/public_url" target="_blank" rel="noopener noreferrer" class="certificate-link">Ver en Credly</a>
+                <a href="https://www.credly.com/badges/780a1381-3cfe-420f-893e-c287e615b85a/public_url" target="_blank" rel="noopener noreferrer" class="cisco-link">Ver en Credly</a>
             </div>
         </div>
         
-        <div class="certificate-card">
-            <img src="{{ site.baseurl }}/assets/img/certificates/cisco-badge-2.png" alt="Networking Academy Learn-A-Thon 2023" class="certificate-img">
-            <div class="certificate-info">
+        <div class="cisco-card">
+            <img src="{{ site.baseurl }}/assets/img/certificates/cisco-badge-2.png" alt="Networking Academy Learn-A-Thon 2023" class="cisco-img">
+            <div class="cisco-info">
                 <h3>Networking Academy Learn-A-Thon 2023</h3>
-                <a href="https://www.credly.com/badges/5fa61f5f-eccc-4ef8-8d86-88f597fa7c30/public_url" target="_blank" rel="noopener noreferrer" class="certificate-link">Ver en Credly</a>
+                <a href="https://www.credly.com/badges/5fa61f5f-eccc-4ef8-8d86-88f597fa7c30/public_url" target="_blank" rel="noopener noreferrer" class="cisco-link">Ver en Credly</a>
             </div>
         </div>
     </div>

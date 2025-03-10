@@ -1,15 +1,102 @@
 <article class="certificate">
     <h2 class="section-h2-title">🤖 Saturday AI</h2>
     <p class="section-text">Curso de Inteligencia Artificial y Deep Learning con Python.</p>
-    <iframe
-        scrolling="no"
-        allowfullscreen="true"
-        webkitallowfullscreen="true"
-        mozallowfullscreen="true"
-        class="onlinecoursehost-certificate-embed"
-        src="https://app.onlinecoursehost.com/certificate-embed/9rvLAQECS7ddrJilBjGjIVoQazm1-1/YL6oPHtfZcWNG0noY2KJ/crDOp3hvBZYhpocyRqpQCi5pGoO2"
-        width="100%"
-        frameborder="0"
-    >
-    </iframe>
+    
+    <div class="saturday-ai-certificate">
+        <div class="certificate-content">
+            <div class="certificate-image">
+                <img src="{{ site.baseurl }}/assets/img/certificates/saturday-ai-badge.png" alt="Saturday AI Certificate" class="certificate-img">
+            </div>
+            <div class="certificate-info">
+                <h3>Certificado de Finalización</h3>
+                <p>Saturday AI - Curso de Inteligencia Artificial y Deep Learning</p>
+                <p class="certificate-date">Mayo 2023</p>
+                <a href="https://app.onlinecoursehost.com/certificate-proof/9rvLAQECS7ddrJilBjGjIVoQazm1-1/YL6oPHtfZcWNG0noY2KJ/crDOp3hvBZYhpocyRqpQCi5pGoO2" target="_blank" rel="noopener noreferrer" class="certificate-button">Ver Certificado Completo</a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .saturday-ai-certificate {
+            width: 100%;
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .certificate-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background: linear-gradient(145deg, #ffffff, #f5f5f5);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            padding: 25px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.8);
+            overflow: hidden;
+        }
+        .certificate-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        .certificate-image {
+            flex: 0 0 200px;
+            margin-right: 30px;
+            position: relative;
+        }
+        .certificate-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        .certificate-info {
+            flex: 1;
+            padding: 10px 0;
+        }
+        .certificate-info h3 {
+            margin-top: 0;
+            font-size: 1.6em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .certificate-info p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .certificate-date {
+            font-style: italic;
+            color: #888;
+        }
+        .certificate-button {
+            display: inline-block;
+            padding: 10px 25px;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .certificate-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .certificate-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .certificate-image {
+                margin-right: 0;
+                margin-bottom: 20px;
+                flex: 0 0 auto;
+            }
+        }
+    </style>
 </article>

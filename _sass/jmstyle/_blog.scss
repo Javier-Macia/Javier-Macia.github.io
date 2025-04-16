@@ -1,5 +1,3 @@
-@use "jmstyle/variables" as *; // variables
-
 .blog-content{
     padding: 32px 20% 98px 20%;
     @media screen and (max-width: $ws-width){

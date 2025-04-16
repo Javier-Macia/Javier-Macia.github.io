@@ -4,4 +4,4 @@ search: false
 ---
 
 @charset "utf-8";
-@import "jmstyle"; // main partials
+@use "jmstyle" as *; // main partials

@@ -25,7 +25,7 @@
 #aside-nav h2{
     padding-bottom: 12px;
     font-weight: 600;
-    color: darken($primary, 10%);
+    color: adjust-color($primary, $lightness: -10%);
     letter-spacing: 0.5px;
 }
 

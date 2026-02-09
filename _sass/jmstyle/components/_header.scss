@@ -100,10 +100,14 @@ nav {
     border-radius: 50%;
     transition: all 0.2s ease-in-out;
     color: $black;
-    margin-left: auto;
+    flex-shrink: 0;
 
     &:hover {
         background: $header-button-color;
         color: $white;
     }
+}
+
+#theme-toggle-header {
+    margin-left: auto;
 }

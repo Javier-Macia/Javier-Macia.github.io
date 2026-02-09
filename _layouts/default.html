@@ -23,7 +23,7 @@
     {% endif %}
     Javier MS
   </title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css?v={{ site.time | date: '%s' }}">
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.png" type="image/x-icon">
 
   <!-- Iconos -->
@@ -57,7 +57,7 @@
 
 </html>
 
-<script src="{{ site.baseurl }}/assets/js/scrolltop.js"></script>
-<script src="{{ site.baseurl }}/assets/js/copy2clipboard.js"></script>
-<script src="{{ site.baseurl }}/assets/js/main.js"></script>
-<script src="{{ site.baseurl }}/assets/js/dark-mode.js"></script>
+<script src="{{ site.baseurl }}/assets/js/scrolltop.js?v={{ site.time | date: '%s' }}"></script>
+<script src="{{ site.baseurl }}/assets/js/copy2clipboard.js?v={{ site.time | date: '%s' }}"></script>
+<script src="{{ site.baseurl }}/assets/js/main.js?v={{ site.time | date: '%s' }}"></script>
+<script src="{{ site.baseurl }}/assets/js/dark-mode.js?v={{ site.time | date: '%s' }}"></script>

@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', () => {
+const initDarkMode = () => {
     const themeToggles = document.querySelectorAll('.theme-toggle');
     const root = document.documentElement;
 
@@ -42,4 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
+};
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initDarkMode);
+} else {
+    initDarkMode();
+}

@@ -6,44 +6,117 @@ $font-size: 16px;
 /*
     COLORS
 */
-$black: #050a0d;
-$white: #f1f1f1;
-$grey: #798a96;
-$light-grey: #eaeaea;
-$background: #f7fafc;
-$primary: #4493c9;
-$secondary: #97c6e5;
-$tertiary: #273646;
-$accent-color: #6bb1e1;
-$header-button-color: #798a96;
-$light-grey-border: #ccc;
-$border: #868686;
+:root {
+    --black: #050a0d;
+    --white: #f1f1f1;
+    --white-rgb: 241, 241, 241;
+    --grey: #798a96;
+    --light-grey: #eaeaea;
+    --background: #f7fafc;
+    --primary: #4493c9;
+    --primary-rgb: 68, 147, 201;
+    --primary-darkened: #2c7bb0;
+    --secondary: #97c6e5;
+    --tertiary: #273646;
+    --accent-color: #6bb1e1;
+    --header-button-color: #798a96;
+    --light-grey-border: #ccc;
+    --border: #868686;
 
-    // Syntax highlighting (base16)
-    $highlight-bg-color: #ffffff;
-    $code-whitespace-color: #bbbbbb ;
-    $code-keyword-color: #445588 ;
-    $code-green-color: #009926 ;
-    $code-light-blue-color: #009999 ;
-    $code-blue-color: #008080 ;
-    $code-dark-blue-color: #0086B3 ;
-    $code-darkest-blue-color: #445588 ;
-    $code-pure-blue-color: #000080 ;
-    $code-red-color: #d14 ;
-    $code-red-dark-color: #990000 ;
+    // Syntax highlighting (base16) - Default Light
+    --highlight-bg-color: #ffffff;
+    --code-whitespace-color: #bbbbbb;
+    --code-keyword-color: #445588;
+    --code-green-color: #009926;
+    --code-light-blue-color: #009999;
+    --code-blue-color: #008080;
+    --code-dark-blue-color: #0086B3;
+    --code-darkest-blue-color: #445588;
+    --code-pure-blue-color: #000080;
+    --code-red-color: #d14;
+    --code-red-dark-color: #990000;
 
-    $code-string-symbol-color: #990073 ;
-    $code-name-color: #800080 ;
-    $code-attribute-color: #008080 ;
-    $code-err-color: #a61717 ;
-    $code-traceback-color: #aa0000 ;
-    $code-grey-color: #e3d2d2 ;
-    $code-grey-lightest-color: #aaaaaa ;
-    $code-grey-light-color: #999988 ;
-    $code-grey-dark-color: #999999 ;
-    $code-grey-darkest-color: #888888 ;
-    $code-grey-darkest-2-color: #555555 ;
-    $code-black-color: #000000 ;
+    --code-string-symbol-color: #990073;
+    --code-name-color: #800080;
+    --code-attribute-color: #008080;
+    --code-err-color: #a61717;
+    --code-traceback-color: #aa0000;
+    --code-grey-color: #e3d2d2;
+    --code-grey-lightest-color: #aaaaaa;
+    --code-grey-light-color: #999988;
+    --code-grey-dark-color: #999999;
+    --code-grey-darkest-color: #888888;
+    --code-grey-darkest-2-color: #555555;
+    --code-black-color: #000000;
+}
+
+[data-theme="dark"] {
+    --black: #f1f1f1;
+    --white: #050a0d;
+    --white-rgb: 5, 10, 13;
+    --grey: #a0b3c1;
+    --light-grey: #2a3b4c;
+    --background: #0d1216;
+    --primary: #4493c9;
+    --primary-rgb: 68, 147, 201;
+    --primary-darkened: #6bb1e1;
+    --secondary: #1a2633;
+    --tertiary: #3a4b5c;
+    --accent-color: #6bb1e1;
+    --header-button-color: #a0b3c1;
+    --light-grey-border: #445566;
+    --border: #868686;
+
+    // Syntax highlighting (base16) - Dark adjustments
+    --highlight-bg-color: #1a2633;
+    --code-whitespace-color: #555555;
+    --code-keyword-color: #8899cc;
+    --code-black-color: #eaeaea;
+    // Add more dark mode overrides if necessary
+}
+
+// Map SCSS variables to CSS custom properties
+$black: var(--black);
+$white: var(--white);
+$grey: var(--grey);
+$light-grey: var(--light-grey);
+$background: var(--background);
+$primary: var(--primary);
+$primary-rgb: var(--primary-rgb);
+$primary-darkened: var(--primary-darkened);
+$secondary: var(--secondary);
+$white-rgb: var(--white-rgb);
+$tertiary: var(--tertiary);
+$accent-color: var(--accent-color);
+$header-button-color: var(--header-button-color);
+$light-grey-border: var(--light-grey-border);
+$border: var(--border);
+
+// Syntax highlighting
+$highlight-bg-color: var(--highlight-bg-color);
+$code-whitespace-color: var(--code-whitespace-color);
+$code-keyword-color: var(--code-keyword-color);
+$code-green-color: var(--code-green-color);
+$code-light-blue-color: var(--code-light-blue-color);
+$code-blue-color: var(--code-blue-color);
+$code-dark-blue-color: var(--code-dark-blue-color);
+$code-darkest-blue-color: var(--code-darkest-blue-color);
+$code-pure-blue-color: var(--code-pure-blue-color);
+$code-red-color: var(--code-red-color);
+$code-red-dark-color: var(--code-red-dark-color);
+$code-string-symbol-color: var(--code-string-symbol-color);
+$code-name-color: var(--code-name-color);
+$code-attribute-color: var(--code-attribute-color);
+$code-err-color: var(--code-err-color);
+$code-traceback-color: var(--code-traceback-color);
+$code-grey-color: var(--code-grey-color);
+$code-grey-lightest-color: var(--code-grey-lightest-color);
+$code-grey-light-color: var(--code-grey-light-color);
+$code-grey-dark-color: var(--code-grey-dark-color);
+$code-grey-darkest-color: var(--code-grey-darkest-color);
+$code-grey-darkest-2-color: var(--code-grey-darkest-2-color);
+$code-black-color: var(--code-black-color);
+
 
 // Widths
 $ws-width: 1440px;
@@ -57,5 +130,3 @@ $aside-width: 368px;
 $page-min-height: 180vh;
 $banner-height: 468px;
 $banner-short-height: 268px;
-
-

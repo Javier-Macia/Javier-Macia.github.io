@@ -1,17 +1,17 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: $font-family;
 }
 
-html{
+html {
     background: $background;
     color: $black;
     scroll-behavior: smooth;
 }
 
-main{
+main {
     padding-top: $header-height;
     min-height: $page-min-height;
     display: flex;
@@ -26,20 +26,22 @@ img {
     overflow: hidden;
 }
 
-ol,ul{
+ol,
+ul {
     list-style-position: inside;
 }
 
-p{
+p {
     margin-block: 1rem;
 }
 
-blockquote{
+blockquote {
     margin: 8px 0;
     padding: 0 0 0 16px;
     border-left: 2px solid $primary;
     font-style: italic;
-    p{
+
+    p {
         margin: 6px 0;
     }
 }
@@ -47,39 +49,44 @@ blockquote{
 table {
     width: 100%;
     border-collapse: collapse;
+
     tr:nth-child(even) {
         background-color: $light-grey;
     }
 
-    th, td {
+    th,
+    td {
         padding: 8px;
         text-align: left;
     }
+
     th {
         background-color: $primary;
-        color: $white;
-    } 
-    th:nth-child(1){
+        color: #f1f1f1;
+    }
+
+    th:nth-child(1) {
         border-top-left-radius: 8px;
     }
-    th:last-child{
+
+    th:last-child {
         border-top-right-radius: 8px;
     }
-    
-    
+
+
 }
 
-@media screen and (max-width: $ms-width){
-    main{
+@media screen and (max-width: $ms-width) {
+    main {
         flex-direction: column;
     }
 }
 
-.container{
+.container {
     width: 100%;
 }
 
-.content{
+.content {
     padding: 32px 25% 98px 10%;
     display: flex;
     flex-direction: column;
@@ -88,7 +95,7 @@ table {
     word-wrap: break-word;
 }
 
-.bg{
+.bg {
     width: 100%;
     height: 100%;
     display: flex;
@@ -104,36 +111,42 @@ table {
     background-size: cover;
     background-position: center;
 
-    &>h1,h2,h3,h4,h5{
+    &>h1,
+    h2,
+    h3,
+    h4,
+    h5 {
         text-align: center;
         width: fit-content;
         background-color: $tertiary;
-        color: $white;
+        color: #f1f1f1;
         padding-inline: 6px;
-        box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.2);
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     }
 }
 
-.presentation{
+.presentation {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 8px;
-    .title{
+
+    .title {
         padding: 8px;
         background-color: #798a96;
         text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     }
-    .subtitle{
+
+    .subtitle {
         padding: 8px;
         text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
         background-color: #27364698;
     }
 }
 
-@media screen and (max-width: $ms-width){
-    .content{
+@media screen and (max-width: $ms-width) {
+    .content {
         padding: 32px 8% 98px 8%;
     }
 }

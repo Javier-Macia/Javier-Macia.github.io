@@ -1,54 +1,63 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1">
-    <meta name="author" content="Javier Maciá Sempere">
-    {% if page.description %}
-      <meta name="description" content="{{ page.description }}">
-    {% else %}
-      <meta name="description" content="{{ site.description }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="author" content="Javier Maciá Sempere">
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+  {% else %}
+  <meta name="description" content="{{ site.description }}">
+  {% endif %}
+
+  {% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords | join: ', ' | escape }}">
+  {% endif %}
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+
+  <title>
+    {% if page.title %}
+    {{ page.title }} -
     {% endif %}
+    Javier MS
+  </title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.png" type="image/x-icon">
 
-    {% if page.keywords %}
-      <meta name="keywords" content="{{ page.keywords | join: ', ' | escape }}">
-    {% endif %}
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    
-    <title>
-      {% if page.title %}
-        {{ page.title }} -
-      {% endif %} 
-      Javier MS
-    </title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
-    <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.png" type="image/x-icon">
+  <!-- Iconos -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- Iconos -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    {% feed_meta %}
-    {% seo %}
+  {% feed_meta %}
+  {% seo %}
+  <script>
+    const theme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (theme === 'dark' || (!theme && systemPrefersDark)) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
 </head>
-  <body>
-    {{ page.custom_css }}
-    {% include header.html %}
-    <main>
-      {% include aside.html %}
-      <div class="container">
-        {{ content }}
-      </div>
-    </main>
-    <div id="scrolltop-btn" tabindex="0">
-      <i class='bx bxs-chevron-up' ></i>
+
+<body>
+  {{ page.custom_css }}
+  {% include header.html %}
+  <main>
+    {% include aside.html %}
+    <div class="container">
+      {{ content }}
     </div>
-    {% include footer.html %}
-  </body>
+  </main>
+  <div id="scrolltop-btn" tabindex="0">
+    <i class='bx bxs-chevron-up'></i>
+  </div>
+  {% include footer.html %}
+</body>
+
 </html>
 
 <script src="{{ site.baseurl }}/assets/js/scrolltop.js"></script>
 <script src="{{ site.baseurl }}/assets/js/copy2clipboard.js"></script>
 <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+<script src="{{ site.baseurl }}/assets/js/dark-mode.js"></script>

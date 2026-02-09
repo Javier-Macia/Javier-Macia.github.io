@@ -1,4 +1,4 @@
-#aside-toggle{
+#aside-toggle {
     display: none;
     cursor: pointer;
     font-size: 2rem;
@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-#aside-nav{
+#aside-nav {
     display: block;
     height: 100vh;
     width: $aside-width;
@@ -18,28 +18,28 @@
     left: 0;
     overflow-y: auto;
     padding-bottom: 14vh;
-    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     border-right: 1px solid #f0f0f0;
 }
 
-#aside-nav h2{
+#aside-nav h2 {
     padding-bottom: 12px;
     font-weight: 600;
-    color: adjust-color($primary, $lightness: -10%);
+    color: $primary-darkened;
     letter-spacing: 0.5px;
 }
 
-#aside-nav h2::after{
+#aside-nav h2::after {
     content: '';
     display: block;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, $primary 0%, rgba(0,0,0,0.1) 100%);
+    background: linear-gradient(90deg, $primary 0%, rgba(0, 0, 0, 0.1) 100%);
     margin-top: 10px;
     border-radius: 2px;
 }
 
-#aside-nav ul{
+#aside-nav ul {
     padding-left: 8px;
     list-style: none;
     display: flex;
@@ -58,7 +58,7 @@
     padding-left: 6px;
 }
 
-#aside-nav ul li a{
+#aside-nav ul li a {
     display: inline-block;
     text-decoration: none;
     color: inherit;
@@ -69,9 +69,9 @@
     transition: all 0.2s ease;
 }
 
-#aside-nav ul li a:hover{
+#aside-nav ul li a:hover {
     color: $primary;
-    background-color: rgba(0,0,0,0.03);
+    background-color: rgba(0, 0, 0, 0.03);
     text-decoration: none;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .recent-post-item {
-    background-color: rgba(0,0,0,0.01);
+    background-color: rgba(0, 0, 0, 0.01);
     margin-bottom: 8px !important;
     border-radius: 6px;
 }
@@ -92,21 +92,21 @@
     position: relative;
 }
 
-.year-button{
-    width:100%;
+.year-button {
+    width: 100%;
     background-color: $tertiary;
     color: $white;
     padding: 4px;
     cursor: pointer;
 }
 
-@media screen and (max-width: $ms-width){
-    #aside-toggle{
+@media screen and (max-width: $ms-width) {
+    #aside-toggle {
         display: flex;
         cursor: pointer;
     }
 
-    #aside-nav{
+    #aside-nav {
         font-size: 1.25em;
         display: none;
         background: rgba(241, 241, 241, 0.95);
@@ -116,10 +116,10 @@
         border-right: 1px solid #dddddd4f;
         width: 100%;
         padding: 24px 20px;
-        border-bottom: 1px solid rgba(0,0,0,0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
-    
+
     .recent-post-item {
-        background-color: rgba(255,255,255,0.5);
+        background-color: rgba(255, 255, 255, 0.5);
     }
 }

@@ -2,9 +2,10 @@
     <div class="category-wrapper">
         <h2 class="aside-section-title">Últimos posts</h2>
         <ul class="recent-posts-list">
-        {% for post in site.posts array limit: 6 %}
-            <li class="recent-post-item"><a href="{{post.url}}"><span class="last-post-title">{{post.titulo}}</span></a></li>
-        {% endfor %}
+            {% for post in site.posts array limit: 6 %}
+            <li class="recent-post-item"><a href="{{post.url}}"><span class="last-post-title">{{post.titulo}}</span></a>
+            </li>
+            {% endfor %}
         </ul>
 
         <!--

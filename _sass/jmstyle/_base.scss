@@ -12,6 +12,7 @@ html {
 }
 
 main {
+    width: 100%;
     padding-top: $header-height;
     min-height: $page-min-height;
     display: flex;
@@ -86,8 +87,20 @@ table {
     width: 100%;
 }
 
+#aside-nav.collapsed {
+    .content {
+        padding: 35% 32px;
+    }
+}
+
+body {
+    width: 100%;
+    max-width: 4080px;
+    margin: 0 auto;
+}
+
 .content {
-    padding: 32px 25% 98px 10%;
+    padding: 98px 32px;
     display: flex;
     flex-direction: column;
     font-size: 1.1rem;
@@ -147,6 +160,6 @@ table {
 
 @media screen and (max-width: $ms-width) {
     .content {
-        padding: 32px 8% 98px 8%;
+        padding: px 32px;
     }
 }

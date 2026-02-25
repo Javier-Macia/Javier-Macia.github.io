@@ -1,6 +1,9 @@
 header {
     min-height: $header-height;
     width: 100%;
+    max-width: 4080px !important;
+    left: 50%;
+    transform: translateX(-50%);
     padding-block: 16px;
     padding-inline: 24px;
     display: flex;

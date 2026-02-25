@@ -1,8 +1,8 @@
-#index-banner{
+#index-banner {
     gap: 4px;
 }
 
-#home-face-img{
+#home-face-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -10,63 +10,71 @@
     border-radius: 50%;
 }
 
-#home-face-id-wrapper{
+#home-face-id-wrapper {
     max-height: 262px;
     max-width: 262px;
     height: 100%;
     width: 100%;
-    @media screen and (max-width: 1024px){
+
+    @media screen and (max-width: 1024px) {
         max-height: 108px;
         max-width: 108px;
     }
 }
 
-.content.index-content{
+.content.index-content {
     gap: 32px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
-.section-title{
+.section-title {
     display: flex;
     align-items: center;
     font-size: 1.75em;
     margin-block: 32px;
 }
 
-.section-title i{
+.section-title i {
     font-size: 3rem;
     margin-right: 8px;
     color: $accent-color;
 }
 
-.section-h2-title{
+.section-h2-title {
     font-size: 1.25em;
     margin-block: 16px;
 }
 
-.section-h3-title{
+.section-h3-title {
     font-size: 1.1em;
     margin-block: 16px;
 }
 
-.section-aboutme .section-text{
+.section-aboutme .section-text {
     line-height: 1.6;
     margin-block: 16px;
 }
 
-.contact-list{
+.contact-list {
     display: flex;
     flex-direction: column;
     gap: 8px;
     list-style: none;
+
     div {
         display: flex;
         align-items: center;
         gap: 8px;
     }
-    .contact-item{
+
+    .contact-item {
         width: 100%;
         padding: 16px 0px 0px 0px;
-        a{
+
+        a {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -83,26 +91,28 @@
             gap: 4px;
             text-decoration: none;
             color: $black;
-            i{
+
+            i {
                 font-size: 1.8rem;
-            
+
             }
         }
-        a:hover{
+
+        a:hover {
             color: $white;
             background-color: $tertiary;
         }
     }
 }
 
-.knowledge-list{
+.knowledge-list {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     list-style: none;
 }
 
-.knowledge-item{
+.knowledge-item {
     background-color: $primary;
     display: flex;
     align-items: center;
@@ -115,26 +125,26 @@
     transition: background-color 0.3s ease-in-out;
 }
 
-.knowledge-item:hover{
+.knowledge-item:hover {
     background-color: $accent-color;
 }
 
-.knowledge-title i{
+.knowledge-title i {
     font-size: 1.5rem;
     margin-right: 8px;
 }
 
-.knowledge-title{
+.knowledge-title {
     display: flex;
     align-items: center;
 }
 
-.work-experience-wrapper{
+.work-experience-wrapper {
     display: flex;
     flex-direction: column;
 }
 
-.work-experience-details{
+.work-experience-details {
     padding: 16px;
     margin-block: 16px;
     border: 1px solid $light-grey-border;

@@ -18,12 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Javier Maciá
+title: Javier Maciá Sempere
 email: javierms.dev@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Portfolio personal. Javier Maciá Sempere.
-  Explora una amplia gama de tutoriales, curiosidades y recursos sobre ingeniería informática en mi wiki.  
-  
+author:
+  name: Javier Maciá Sempere
+  email: javierms.dev@gmail.com
+  url: "https://javierms.dev/"
+description: >-
+  Portfolio personal de Javier Maciá Sempere, ingeniero informático y desarrollador Full Stack.
+  Especializado en Drupal, PHP, JavaScript, Next.js y TypeScript.
+  Explora mi experiencia, proyectos y conocimientos en desarrollo web.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://javierms.dev/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  javier-macia

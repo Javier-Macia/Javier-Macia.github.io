@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -13,15 +13,53 @@
 
   {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords | join: ', ' | escape }}">
+  {% else %}
+  <meta name="keywords" content="Javier Maciá, Javier Maciá Sempere, desarrollador web, Full Stack, Drupal, PHP, JavaScript, portfolio ingeniero informático">
   {% endif %}
   <meta name="robots" content="index, follow">
   <meta name="googlebot" content="index, follow">
 
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:site_name" content="Javier Maciá Sempere">
+  {% if page.title %}
+  <meta property="og:title" content="{{ page.title }} - Javier Maciá Sempere">
+  {% else %}
+  <meta property="og:title" content="Javier Maciá Sempere | Desarrollador Full Stack">
+  {% endif %}
+  {% if page.description %}
+  <meta property="og:description" content="{{ page.description }}">
+  {% else %}
+  <meta property="og:description" content="{{ site.description }}">
+  {% endif %}
+  <meta property="og:image" content="{{ '/assets/img/jms.png' | absolute_url }}">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@javierms_dev">
+  {% if page.title %}
+  <meta name="twitter:title" content="{{ page.title }} - Javier Maciá Sempere">
+  {% else %}
+  <meta name="twitter:title" content="Javier Maciá Sempere | Desarrollador Full Stack">
+  {% endif %}
+  {% if page.description %}
+  <meta name="twitter:description" content="{{ page.description }}">
+  {% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
+  {% endif %}
+  <meta name="twitter:image" content="{{ '/assets/img/jms.png' | absolute_url }}">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+
   <title>
     {% if page.title %}
-    {{ page.title }} -
+    {{ page.title }} - Javier Maciá Sempere
+    {% else %}
+    Javier Maciá Sempere | Desarrollador Full Stack
     {% endif %}
-    Javier MS
   </title>
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css?v={{ site.time | date: '%s' }}">
   <link rel="shortcut icon" href="{{ site.baseurl }}/assets/img/favicon.png" type="image/x-icon">
@@ -31,6 +69,32 @@
 
   {% feed_meta %}
   {% seo %}
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Javier Maciá Sempere",
+    "alternateName": "Javier MS",
+    "url": "https://javierms.dev/",
+    "image": "https://javierms.dev/assets/img/jms.png",
+    "email": "javierms.dev@gmail.com",
+    "jobTitle": "Desarrollador Full Stack",
+    "description": "Ingeniero informático y desarrollador Full Stack especializado en Drupal, PHP y JavaScript.",
+    "sameAs": [
+      "https://www.linkedin.com/in/javiermaciasempere/",
+      "https://github.com/Javier-Macia",
+      "https://gitlab.com/Javier-Macia"
+    ],
+    "knowsAbout": ["Drupal", "PHP", "JavaScript", "Next.js", "TypeScript", "Full Stack Development"],
+    "alumniOf": {
+      "@type": "Organization",
+      "name": "Universidad Miguel Hernández de Elche"
+    }
+  }
+  </script>
+
   <script>
     const theme = localStorage.getItem('theme');
     const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
